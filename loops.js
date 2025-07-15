@@ -1,4 +1,4 @@
-var arr = [1, 2, 3, 4, 5, 6];
+var arr = [10, 20, 30, 40, 50, 60];
 
 var i = 0;
 
@@ -7,7 +7,16 @@ var i = 0;
 //   i++;
 // }
 
-do {
-  console.log(i);
-  i++;
-} while (i < arr.length);
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < arr.length);
+
+function printVals(index, value) {
+  console.log(value + index * 2);
+}
+
+arr.forEach(printVals);
+// printVals(10, 0);
+// printVals(20, 1);
+// printVals(30, 2);
