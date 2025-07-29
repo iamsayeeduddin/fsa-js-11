@@ -28,9 +28,13 @@ class NewContact extends Contact {
       work,
     };
   }
+
+  getWorkEmail() {
+    console.log(`This is ${this.name}'s work email: ${this.email[0]}`);
+  }
 }
 
 const contact3 = new NewContact("Umed", 96321587410, ["umaed@fsa.in"], "Tolichowki", "Hitech City");
 // console.log(contact3, contact1, contact2);
-contact3.call();
-// contact3.getWorkEmail();
+// contact3.call();
+contact3.getWorkEmail();
