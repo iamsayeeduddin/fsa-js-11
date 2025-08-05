@@ -61,7 +61,22 @@ var multiply = (a, b) => {
 //   .catch((err) => console.log(err))
 //   .finally(() => console.log("Async Operation executed!"));
 
-fetch("https://api.github.com/users")
-  .then((res) => res.json())
-  .then((res2) => console.log(res2))
-  .catch((err) => console.log(err));
+// fetch("https://api.github.com/users")
+//   .then((res) => res.json())
+//   .then((res2) => console.log(res2))
+//   .catch((err) => console.log(err));
+
+const init = async () => {
+  try {
+    const addRes = await add(6, 2.5);
+    const subRes = await subtract(addRes, 5);
+    const mulRes = await multiply(subRes, 2);
+    console.log(mulRes);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log("Async Operation executed!");
+  }
+};
+
+init();
