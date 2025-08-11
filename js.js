@@ -11,4 +11,17 @@ var arr = [1, 2, 3, 34, 4, 5, 6, 6];
 
 // var resultantArr = arr.map((val) => val * 2);
 var resultantArr = arr.filter((val) => val % 2 === 0);
-console.log(resultantArr);
+export default resultantArr;
+// console.log(resultantArr);
+
+export const PI = 3.14;
+
+export const call = (name) => {
+  console.log(`Hey ${name}!`);
+};
+
+// module.exports = {
+//   //   PI: PI,
+//   PI,
+//   call,
+// };
